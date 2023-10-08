@@ -1,0 +1,10 @@
+.animate{
+    width: 350px;
+    height: 350px;
+    margin-top: -88px;
+}
+.text{
+    font-size: 24px;
+    font-weight: 600;
+    color: grey;
+}
