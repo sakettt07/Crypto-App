@@ -7,6 +7,7 @@ import axios from 'axios';
 import { server } from '../main';
 import Error from './Error';
 import { Radio,RadioGroup,HStack,Badge,Button } from '@chakra-ui/react';
+import Chart from './Chart';
 
 const CoinDetails = () => {
 
@@ -44,7 +45,9 @@ const CoinDetails = () => {
       {
         loading?<Loader />:(
           <>
-          <Box width={"full"} borderWidth={1}>sdf</Box>
+          <Box width={"full"} borderWidth={1}>
+            <Chart currency={currencySymbol} />
+          </Box>
 
           <RadioGroup value={currency} onChange={setCurrency} p={"3"} >
           <HStack spacing={"4"}>
