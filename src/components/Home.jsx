@@ -1,22 +1,19 @@
-import React from 'react';
-import { Box, Image,Text } from '@chakra-ui/react';
-// import {motion } from "framer-motion";
-import bit from "../assets/bitcp2.png";
+import React from "react";
+import "./Home.css";
+
 const Home = () => {
   return (
-    <Box bgColor={"blackAlpha.900"} w={"full"} h={"100vh"}>
-      <Image w={"full"} h={"xl"} objectFit={"contain"} src={bit} />
-      <Text
-        fontSize={"6xl"}
-        textAlign={"center"}
-        fontWeight={"thin"}
-        color={"whiteAlpha.700"}
-        mt={"-49"}
-      >
-        Visit Crypto
-      </Text>
-    </Box>
-  )
-}
+    <div className="main">
+      <div className="left">
+        <h1>Crypto Crack</h1>
+        <p>
+          This is a one stop web application that tell you about all the types
+          of exchages regarding the crypto currency and about all the coins
+          related to it.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

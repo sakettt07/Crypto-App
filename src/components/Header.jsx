@@ -1,17 +1,18 @@
 import { Button, HStack } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <HStack p={"5"} shadow={"base"} bgColor={"blackAlpha.900"}>
-      <Button variant={"unstyled"} color={"green"} ml={"22"} fontSize={"2xl"}>
-        <Link to="/">Home</Link>
+    <HStack p={"4"} backgroundColor={"#000000"} className={"header"}>
+      <Button variant={"unstyled"} color={"white"}  fontSize={"xl"} className={"headerbtn"}>
+        <Link className="a" to="/">Home</Link>
       </Button>
-      <Button variant={"unstyled"} color={"gold"} fontSize={"2xl"}>
+      <Button variant={"unstyled"} color={"white"} fontSize={"xl"} className={"headerbtn"}>
         <Link to="/Exchanges">Exchanges</Link>
       </Button>
-      <Button variant={"unstyled"} color={"silver"} fontSize={"2xl"}>
+      <Button variant={"unstyled"} color={"white"} fontSize={"xl"} className={"headerbtn"}>
         <Link to="/Coins">Coins</Link>
       </Button>
     </HStack>

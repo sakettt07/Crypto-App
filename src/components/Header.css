@@ -1,0 +1,12 @@
+.header {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.a{
+    margin-left: 3rem;
+}
+.headerbtn:hover{
+    color: blue;
+    transform: scale(1.1);
+}
